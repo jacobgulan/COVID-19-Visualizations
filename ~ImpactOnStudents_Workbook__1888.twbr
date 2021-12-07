@@ -1,0 +1,1029 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.21.0822.2038                               -->
+<workbook source-build='2021.3.0 (20213.21.0822.2038)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Age of Subject Num Parameter' datatype='integer' name='[Age of Subject Num Parameter]' param-domain-type='range' role='measure' type='quantitative' value='10'>
+        <calculation class='tableau' formula='10' />
+        <range max='44' min='10' />
+      </column>
+    </datasource>
+    <datasource caption='studentResponses_preprocessed' inline='true' name='federated.0yjr9o50mm4pvg16xjbio0cgmn3w' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='studentResponses_preprocessed' name='textscan.02wryiw1tcs8ys11dyj461o7mdjp'>
+            <connection class='textscan' directory='C:/Users/jpgul/Desktop/Classes/Visualization/COVID-19_Visualizations/datasets' filename='studentResponses_preprocessed.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.02wryiw1tcs8ys11dyj461o7mdjp' name='studentResponses_preprocessed.csv' table='[studentResponses_preprocessed#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='ï»¿ID' ordinal='0' />
+            <column datatype='string' name='Region of residence' ordinal='1' />
+            <column datatype='integer' name='Age of Subject' ordinal='2' />
+            <column datatype='real' name='Time spent on Online Class' ordinal='3' />
+            <column datatype='integer' name='Rating of Online Class experience' ordinal='4' />
+            <column datatype='string' name='Medium for online class' ordinal='5' />
+            <column datatype='real' name='Time spent on self study' ordinal='6' />
+            <column datatype='real' name='Time spent on fitness' ordinal='7' />
+            <column datatype='real' name='Time spent on sleep' ordinal='8' />
+            <column datatype='real' name='Time spent on social media' ordinal='9' />
+            <column datatype='string' name='Prefered social media platform' ordinal='10' />
+            <column datatype='real' name='Time spent on TV' ordinal='11' />
+            <column datatype='integer' name='Number of meals per day' ordinal='12' />
+            <column datatype='string' name='Change in your weight' ordinal='13' />
+            <column datatype='string' name='Health issue during lockdown' ordinal='14' />
+            <column datatype='string' name='Stress busters' ordinal='15' />
+            <column datatype='string' name='Time utilized' ordinal='16' />
+            <column datatype='string' name='Do you find yourself more connected with your family, close friends , relatives  ?' ordinal='17' />
+            <column datatype='string' name='What you miss the most' ordinal='18' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.02wryiw1tcs8ys11dyj461o7mdjp' name='studentResponses_preprocessed.csv' table='[studentResponses_preprocessed#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='ï»¿ID' ordinal='0' />
+            <column datatype='string' name='Region of residence' ordinal='1' />
+            <column datatype='integer' name='Age of Subject' ordinal='2' />
+            <column datatype='real' name='Time spent on Online Class' ordinal='3' />
+            <column datatype='integer' name='Rating of Online Class experience' ordinal='4' />
+            <column datatype='string' name='Medium for online class' ordinal='5' />
+            <column datatype='real' name='Time spent on self study' ordinal='6' />
+            <column datatype='real' name='Time spent on fitness' ordinal='7' />
+            <column datatype='real' name='Time spent on sleep' ordinal='8' />
+            <column datatype='real' name='Time spent on social media' ordinal='9' />
+            <column datatype='string' name='Prefered social media platform' ordinal='10' />
+            <column datatype='real' name='Time spent on TV' ordinal='11' />
+            <column datatype='integer' name='Number of meals per day' ordinal='12' />
+            <column datatype='string' name='Change in your weight' ordinal='13' />
+            <column datatype='string' name='Health issue during lockdown' ordinal='14' />
+            <column datatype='string' name='Stress busters' ordinal='15' />
+            <column datatype='string' name='Time utilized' ordinal='16' />
+            <column datatype='string' name='Do you find yourself more connected with your family, close friends , relatives  ?' ordinal='17' />
+            <column datatype='string' name='What you miss the most' ordinal='18' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[studentResponses_preprocessed.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ï»¿ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ï»¿ID]</local-name>
+            <parent-name>[studentResponses_preprocessed.csv]</parent-name>
+            <remote-alias>ï»¿ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[studentResponses_preprocessed.csv_49211F08F5194547938315262A93890E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region of residence</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Region of residence]</local-name>
+            <parent-name>[studentResponses_preprocessed.csv]</parent-name>
+            <remote-alias>Region of residence</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[studentResponses_preprocessed.csv_49211F08F5194547938315262A93890E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age of Subject</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age of Subject]</local-name>
+            <parent-name>[studentResponses_preprocessed.csv]</parent-name>
+            <remote-alias>Age of Subject</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[studentResponses_preprocessed.csv_49211F08F5194547938315262A93890E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time spent on Online Class</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Time spent on Online Class]</local-name>
+            <parent-name>[studentResponses_preprocessed.csv]</parent-name>
+            <remote-alias>Time spent on Online Class</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[studentResponses_preprocessed.csv_49211F08F5194547938315262A93890E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rating of Online Class experience</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Rating of Online Class experience]</local-name>
+            <parent-name>[studentResponses_preprocessed.csv]</parent-name>
+            <remote-alias>Rating of Online Class experience</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[studentResponses_preprocessed.csv_49211F08F5194547938315262A93890E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Medium for online class</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Medium for online class]</local-name>
+            <parent-name>[studentResponses_preprocessed.csv]</parent-name>
+            <remote-alias>Medium for online class</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[studentResponses_preprocessed.csv_49211F08F5194547938315262A93890E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time spent on self study</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Time spent on self study]</local-name>
+            <parent-name>[studentResponses_preprocessed.csv]</parent-name>
+            <remote-alias>Time spent on self study</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[studentResponses_preprocessed.csv_49211F08F5194547938315262A93890E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time spent on fitness</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Time spent on fitness]</local-name>
+            <parent-name>[studentResponses_preprocessed.csv]</parent-name>
+            <remote-alias>Time spent on fitness</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[studentResponses_preprocessed.csv_49211F08F5194547938315262A93890E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time spent on sleep</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Time spent on sleep]</local-name>
+            <parent-name>[studentResponses_preprocessed.csv]</parent-name>
+            <remote-alias>Time spent on sleep</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[studentResponses_preprocessed.csv_49211F08F5194547938315262A93890E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time spent on social media</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Time spent on social media]</local-name>
+            <parent-name>[studentResponses_preprocessed.csv]</parent-name>
+            <remote-alias>Time spent on social media</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[studentResponses_preprocessed.csv_49211F08F5194547938315262A93890E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Prefered social media platform</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Prefered social media platform]</local-name>
+            <parent-name>[studentResponses_preprocessed.csv]</parent-name>
+            <remote-alias>Prefered social media platform</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[studentResponses_preprocessed.csv_49211F08F5194547938315262A93890E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time spent on TV</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Time spent on TV]</local-name>
+            <parent-name>[studentResponses_preprocessed.csv]</parent-name>
+            <remote-alias>Time spent on TV</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[studentResponses_preprocessed.csv_49211F08F5194547938315262A93890E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of meals per day</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of meals per day]</local-name>
+            <parent-name>[studentResponses_preprocessed.csv]</parent-name>
+            <remote-alias>Number of meals per day</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[studentResponses_preprocessed.csv_49211F08F5194547938315262A93890E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Change in your weight</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Change in your weight]</local-name>
+            <parent-name>[studentResponses_preprocessed.csv]</parent-name>
+            <remote-alias>Change in your weight</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[studentResponses_preprocessed.csv_49211F08F5194547938315262A93890E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Health issue during lockdown</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Health issue during lockdown]</local-name>
+            <parent-name>[studentResponses_preprocessed.csv]</parent-name>
+            <remote-alias>Health issue during lockdown</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[studentResponses_preprocessed.csv_49211F08F5194547938315262A93890E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stress busters</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Stress busters]</local-name>
+            <parent-name>[studentResponses_preprocessed.csv]</parent-name>
+            <remote-alias>Stress busters</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[studentResponses_preprocessed.csv_49211F08F5194547938315262A93890E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time utilized</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Time utilized]</local-name>
+            <parent-name>[studentResponses_preprocessed.csv]</parent-name>
+            <remote-alias>Time utilized</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[studentResponses_preprocessed.csv_49211F08F5194547938315262A93890E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Do you find yourself more connected with your family, close friends , relatives  ?</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Do you find yourself more connected with your family, close friends , relatives  ?]</local-name>
+            <parent-name>[studentResponses_preprocessed.csv]</parent-name>
+            <remote-alias>Do you find yourself more connected with your family, close friends , relatives  ?</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[studentResponses_preprocessed.csv_49211F08F5194547938315262A93890E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>What you miss the most</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[What you miss the most]</local-name>
+            <parent-name>[studentResponses_preprocessed.csv]</parent-name>
+            <remote-alias>What you miss the most</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[studentResponses_preprocessed.csv_49211F08F5194547938315262A93890E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Age of Subject' datatype='integer' name='[Age of Subject (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[Age of Subject]' peg='0' size='5' />
+      </column>
+      <column caption='Age of Subject - Dimension' datatype='integer' name='[Age of Subject Num (copy)_132856236202041345]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Age of Subject]' />
+      </column>
+      <column caption='Age of Subject Num' datatype='integer' name='[Age of Subject]' role='measure' type='quantitative' />
+      <column caption='Rating of Online Class experience (bin)' datatype='integer' name='[Rating of Online Class experience (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[Rating of Online Class experience]' peg='0' size='1' />
+      </column>
+      <column datatype='integer' name='[Rating of Online Class experience]' role='measure' type='quantitative' />
+      <column caption='Time spent on Online Class (bin)' datatype='integer' name='[Time spent on Online Class (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='-1' formula='[Time spent on Online Class]' peg='0' size='0.5' />
+      </column>
+      <column datatype='real' name='[Time spent on Online Class]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Time spent on fitness]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Time spent on self study]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Time spent on social media]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='studentResponses_preprocessed.csv' datatype='table' name='[__tableau_internal_object_id__].[studentResponses_preprocessed.csv_49211F08F5194547938315262A93890E]' role='measure' type='quantitative' />
+      <column caption='ID' datatype='string' name='[ï»¿ID]' role='dimension' type='nominal' />
+      <column-instance column='[Time spent on Online Class]' derivation='Avg' name='[avg:Time spent on Online Class:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Time spent on fitness]' derivation='Avg' name='[avg:Time spent on fitness:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Time spent on self study]' derivation='Avg' name='[avg:Time spent on self study:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Time spent on social media]' derivation='Avg' name='[avg:Time spent on social media:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Time spent on fitness]' derivation='Count' name='[cnt:Time spent on fitness:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Time spent on fitness]' derivation='Median' name='[med:Time spent on fitness:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Age of Subject (bin)]' derivation='None' name='[none:Age of Subject (bin):ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Time spent on Online Class]' derivation='None' name='[none:Time spent on Online Class:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Time spent on fitness]' derivation='None' name='[none:Time spent on fitness:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Time spent on self study]' derivation='None' name='[none:Time spent on self study:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Time spent on social media]' derivation='None' name='[none:Time spent on social media:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Rating of Online Class experience]' derivation='Sum' name='[sum:Rating of Online Class experience:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Time spent on fitness]' derivation='Sum' name='[sum:Time spent on fitness:qk]' pivot='key' type='quantitative' />
+      <group caption='Action (Age of Subject)' hidden='true' name='[Action (Age of Subject)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Age of Subject (bin)]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Time spent on Online Class,Time spent on fitness,Time spent on self study,Time spent on social media)' hidden='true' name='[Action (Time spent on Online Class,Time spent on fitness,Time spent on self study,Time spent on social media)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Time spent on Online Class:ok]' />
+          <groupfilter function='level-members' level='[none:Time spent on fitness:ok]' />
+          <groupfilter function='level-members' level='[none:Time spent on self study:ok]' />
+          <groupfilter function='level-members' level='[none:Time spent on social media:ok]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' palette='superfishel_stone_10_0' type='palette'>
+            <map to='#55ad89'>
+              <bucket>&quot;[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[sum:Rating of Online Class experience:qk]&quot;</bucket>
+            </map>
+            <map to='#6388b4'>
+              <bucket>&quot;[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[avg:Time spent on Online Class:qk]&quot;</bucket>
+            </map>
+            <map to='#8cc2ca'>
+              <bucket>&quot;[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[avg:Time spent on social media:qk]&quot;</bucket>
+            </map>
+            <map to='#c3bc3f'>
+              <bucket>&quot;[Parameters].[Age of Subject Num Parameter]&quot;</bucket>
+            </map>
+            <map to='#ef6f6a'>
+              <bucket>&quot;[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[avg:Time spent on self study:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[cnt:Time spent on fitness:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[med:Time spent on fitness:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[sum:Time spent on fitness:qk]&quot;</bucket>
+            </map>
+            <map to='#ffae34'>
+              <bucket>&quot;[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[avg:Time spent on fitness:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='shape' field='[none:Age of Subject (bin):ok]' type='shape'>
+            <map to='asterisk'>
+              <bucket>5</bucket>
+            </map>
+            <map to='circle'>
+              <bucket>1</bucket>
+            </map>
+            <map to='circle'>
+              <bucket>11</bucket>
+            </map>
+            <map to='diamond'>
+              <bucket>6</bucket>
+            </map>
+            <map to='down-triangle'>
+              <bucket>8</bucket>
+            </map>
+            <map to='left-triangle'>
+              <bucket>9</bucket>
+            </map>
+            <map to='plus'>
+              <bucket>3</bucket>
+            </map>
+            <map to='right-triangle'>
+              <bucket>10</bucket>
+            </map>
+            <map to='square'>
+              <bucket>2</bucket>
+            </map>
+            <map to='times'>
+              <bucket>4</bucket>
+            </map>
+            <map to='triangle'>
+              <bucket>7</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Age of Subject Num Parameter' datatype='integer' name='[Age of Subject Num Parameter]' param-domain-type='range' role='measure' type='quantitative' value='10'>
+          <calculation class='tableau' formula='10' />
+          <range max='44' min='10' />
+        </column>
+      </datasource-dependencies>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='studentResponses_preprocessed.csv' id='studentResponses_preprocessed.csv_49211F08F5194547938315262A93890E'>
+            <properties context=''>
+              <relation connection='textscan.02wryiw1tcs8ys11dyj461o7mdjp' name='studentResponses_preprocessed.csv' table='[studentResponses_preprocessed#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='ï»¿ID' ordinal='0' />
+                  <column datatype='string' name='Region of residence' ordinal='1' />
+                  <column datatype='integer' name='Age of Subject' ordinal='2' />
+                  <column datatype='real' name='Time spent on Online Class' ordinal='3' />
+                  <column datatype='integer' name='Rating of Online Class experience' ordinal='4' />
+                  <column datatype='string' name='Medium for online class' ordinal='5' />
+                  <column datatype='real' name='Time spent on self study' ordinal='6' />
+                  <column datatype='real' name='Time spent on fitness' ordinal='7' />
+                  <column datatype='real' name='Time spent on sleep' ordinal='8' />
+                  <column datatype='real' name='Time spent on social media' ordinal='9' />
+                  <column datatype='string' name='Prefered social media platform' ordinal='10' />
+                  <column datatype='real' name='Time spent on TV' ordinal='11' />
+                  <column datatype='integer' name='Number of meals per day' ordinal='12' />
+                  <column datatype='string' name='Change in your weight' ordinal='13' />
+                  <column datatype='string' name='Health issue during lockdown' ordinal='14' />
+                  <column datatype='string' name='Stress busters' ordinal='15' />
+                  <column datatype='string' name='Time utilized' ordinal='16' />
+                  <column datatype='string' name='Do you find yourself more connected with your family, close friends , relatives  ?' ordinal='17' />
+                  <column datatype='string' name='What you miss the most' ordinal='18' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.0yjr9o50mm4pvg16xjbio0cgmn3w'>
+      <datasources>
+        <datasource caption='studentResponses_preprocessed' name='federated.0yjr9o50mm4pvg16xjbio0cgmn3w' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0yjr9o50mm4pvg16xjbio0cgmn3w'>
+        <column caption='Age of Subject' datatype='integer' name='[Age of Subject (bin)]' role='dimension' type='ordinal'>
+          <calculation class='bin' decimals='0' formula='[Age of Subject]' peg='0' size='5' />
+        </column>
+        <column caption='Age of Subject Num' datatype='integer' name='[Age of Subject]' role='measure' type='quantitative' />
+        <column-instance column='[Age of Subject (bin)]' derivation='None' name='[none:Age of Subject (bin):ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[none:Age of Subject (bin):ok]'>
+        <groupfilter from='2' function='range' level='[none:Age of Subject (bin):ok]' to='8' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Age Selector' name='[Action1_410A24B85F1C47069A88692B3C190A30]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Stacked Bars' />
+      <command command='tsc:tsl-filter'>
+        <param name='exclude' value='Stacked Bars' />
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Person Selector' name='[Action3_23DBF771FE0244CB985B561A2DE0F27D]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Scatterplot' />
+      <command command='tsc:tsl-filter'>
+        <param name='exclude' value='Scatterplot,Stacked Bars' />
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Highlight1' name='[Action3_653E0FE1B1AF4924A75A1842372A4B2A]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Pie Chart' />
+      <command command='tsc:brush'>
+        <param name='exclude' value='Scatterplot,Pie Chart' />
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet lock-updates='true' name='Pie Chart'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='studentResponses_preprocessed' name='federated.0yjr9o50mm4pvg16xjbio0cgmn3w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0yjr9o50mm4pvg16xjbio0cgmn3w'>
+            <column caption='Age of Subject' datatype='integer' name='[Age of Subject (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Age of Subject]' peg='0' size='5' />
+            </column>
+            <column caption='Age of Subject Num' datatype='integer' name='[Age of Subject]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Time spent on Online Class]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Time spent on fitness]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Time spent on self study]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Time spent on social media]' role='measure' type='quantitative' />
+            <column-instance column='[Time spent on Online Class]' derivation='Avg' name='[avg:Time spent on Online Class:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Time spent on fitness]' derivation='Avg' name='[avg:Time spent on fitness:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Time spent on self study]' derivation='Avg' name='[avg:Time spent on self study:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Time spent on social media]' derivation='Avg' name='[avg:Time spent on social media:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age of Subject (bin)]' derivation='None' name='[none:Age of Subject (bin):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[avg:Time spent on Online Class:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[avg:Time spent on fitness:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[avg:Time spent on self study:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[avg:Time spent on social media:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[:Measure Names]</column>
+            <column>[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[none:Age of Subject (bin):ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[:Measure Names]' />
+              <size column='[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[Multiple Values]' />
+              <text column='[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <show-full-range>
+          <column>[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[Age of Subject (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{9C877C01-25BD-46A9-9A79-80F7997AFD1F}' />
+    </worksheet>
+    <worksheet name='Scatterplot'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='studentResponses_preprocessed' name='federated.0yjr9o50mm4pvg16xjbio0cgmn3w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0yjr9o50mm4pvg16xjbio0cgmn3w'>
+            <column caption='Age of Subject' datatype='integer' name='[Age of Subject (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Age of Subject]' peg='0' size='5' />
+            </column>
+            <column caption='Age of Subject Num' datatype='integer' name='[Age of Subject]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Rating of Online Class experience]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Time spent on self study]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Time spent on social media]' role='measure' type='quantitative' />
+            <column-instance column='[Age of Subject (bin)]' derivation='None' name='[none:Age of Subject (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Rating of Online Class experience]' derivation='Sum' name='[sum:Rating of Online Class experience:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Time spent on self study]' derivation='Sum' name='[sum:Time spent on self study:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Time spent on social media]' derivation='Sum' name='[sum:Time spent on social media:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[none:Age of Subject (bin):ok]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[sum:Time spent on social media:qk]' field-type='quantitative' major-origin='0.0' major-spacing='0.5' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[sum:Rating of Online Class experience:qk]' palette='red_green_gold_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='shape' field='[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[none:Age of Subject (bin):ok]' value='Age'>
+              <formatted-text>
+                <run>Age</run>
+              </formatted-text>
+            </format>
+            <format attr='color' field='[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[sum:Rating of Online Class experience:qk]' value='Rating of Online Class Experience'>
+              <formatted-text>
+                <run>Rating of Online Class Experience</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='18' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[sum:Rating of Online Class experience:qk]' />
+              <shape column='[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[none:Age of Subject (bin):ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[sum:Time spent on self study:qk]</rows>
+        <cols>[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[sum:Time spent on social media:qk]</cols>
+        <show-full-range>
+          <column>[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[Age of Subject (bin)]</column>
+          <column>[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[Rating of Online Class experience (bin)]</column>
+          <column>[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[Time spent on Online Class (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{EFCB33BF-3CA8-4FAD-B23D-58F8D0A71824}' />
+    </worksheet>
+    <worksheet name='Stacked Bars'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='studentResponses_preprocessed' name='federated.0yjr9o50mm4pvg16xjbio0cgmn3w' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Age of Subject Num Parameter' datatype='integer' name='[Age of Subject Num Parameter]' param-domain-type='range' role='measure' type='quantitative' value='10'>
+              <calculation class='tableau' formula='10' />
+              <range max='44' min='10' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0yjr9o50mm4pvg16xjbio0cgmn3w'>
+            <column caption='Age of Subject' datatype='integer' name='[Age of Subject (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Age of Subject]' peg='0' size='5' />
+            </column>
+            <column caption='Age of Subject Num' datatype='integer' name='[Age of Subject]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Time spent on Online Class]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Time spent on fitness]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Time spent on self study]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Time spent on social media]' role='measure' type='quantitative' />
+            <column-instance column='[Time spent on Online Class]' derivation='Avg' name='[avg:Time spent on Online Class:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Time spent on fitness]' derivation='Avg' name='[avg:Time spent on fitness:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Time spent on self study]' derivation='Avg' name='[avg:Time spent on self study:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Time spent on social media]' derivation='Avg' name='[avg:Time spent on social media:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age of Subject (bin)]' derivation='None' name='[none:Age of Subject (bin):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[avg:Time spent on Online Class:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[avg:Time spent on fitness:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[avg:Time spent on self study:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[avg:Time spent on social media:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[avg:Time spent on Online Class:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[avg:Time spent on fitness:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[avg:Time spent on self study:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[avg:Time spent on social media:qk]&quot;</bucket>
+              <bucket>&quot;[Parameters].[Age of Subject Num Parameter]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[:Measure Names]</column>
+            <column>[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[none:Age of Subject (bin):ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[Multiple Values]' scope='rows' value='Hours' />
+            <format attr='height' field='[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[none:Age of Subject (bin):ok]' value='24' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[Multiple Values]</rows>
+        <cols>[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[none:Age of Subject (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[Age of Subject (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{C480DE85-FB75-4FE8-A5F9-6794857EF303}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='23' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='21' type-v2='layout-basic' w='98400' x='800' y='1000'>
+              <zone h='49000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='49000' id='5' type-v2='layout-basic' w='98400' x='800' y='1000'>
+                  <zone h='49000' id='3' name='Stacked Bars' w='58499' x='800' y='1000'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='49000' id='13' name='Pie Chart' w='39901' x='59299' y='1000'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+              <zone h='49000' id='20' name='Scatterplot' w='88300' x='800' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='25' name='Scatterplot' pane-specification-id='18' param='[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[none:Age of Subject (bin):ok]' type-v2='shape' w='10100' x='89100' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='13250' id='8' name='Stacked Bars' pane-specification-id='0' param='[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[:Measure Names]' type-v2='color' w='38500' x='73800' y='1750' />
+        <zone h='7000' id='24' name='Scatterplot' pane-specification-id='18' param='[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[sum:Rating of Online Class experience:qk]' type-v2='color' w='23700' x='61500' y='42000' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1100' minheight='1100' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='43' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='42' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='49000' id='3' is-fixed='true' name='Stacked Bars' w='58499' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='13250' id='8' name='Stacked Bars' pane-specification-id='0' param='[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[:Measure Names]' type-v2='color' w='38500' x='73800' y='1750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='13' is-fixed='true' name='Pie Chart' w='39901' x='59299' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='20' is-fixed='true' name='Scatterplot' w='88300' x='800' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='49000' id='25' name='Scatterplot' pane-specification-id='18' param='[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[none:Age of Subject (bin):ok]' type-v2='shape' w='10100' x='89100' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7000' id='24' name='Scatterplot' pane-specification-id='18' param='[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[sum:Rating of Online Class experience:qk]' type-v2='color' w='23700' x='61500' y='42000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{80F64A6D-324D-4DD6-BC05-27657B4841D3}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Stacked Bars'>
+      <cards>
+        <edge name='left'>
+          <strip size='128'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='24'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[none:Age of Subject (bin):ok]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{17B2E071-E415-443D-A3B6-588C8ADD2CD1}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Pie Chart'>
+      <cards>
+        <edge name='left'>
+          <strip size='128'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[:Measure Names]' type='color' />
+            <card pane-specification-id='0' param='[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[Multiple Values]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <floating-toolbar-visibility value='1' />
+      </viewpoint>
+      <simple-id uuid='{49BA4EB8-1D1A-4BB0-A2A0-A967AF1F01D9}' />
+    </window>
+    <window class='worksheet' name='Scatterplot'>
+      <cards>
+        <edge name='left'>
+          <strip size='128'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[none:Age of Subject (bin):ok]' type='filter' />
+            <card pane-specification-id='18' param='[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[sum:Rating of Online Class experience:qk]' type='color' />
+            <card pane-specification-id='18' param='[federated.0yjr9o50mm4pvg16xjbio0cgmn3w].[none:Age of Subject (bin):ok]' type='shape' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{5767D5E4-BB38-40FC-A8C7-5E2F54833CBF}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Pie Chart'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Scatterplot'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Stacked Bars'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{E9A201C7-FC4E-4044-BE4E-CC83E600A409}' />
+    </window>
+  </windows>
+</workbook>
