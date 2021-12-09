@@ -1,4 +1,4 @@
-# COVID-19_Visualizations
+# COVID-19 Visualizations
 A series of dashboards pertaining to tasks regarding COVID-19 for Visual Analytics class
 
 Tasks:
@@ -11,6 +11,7 @@ Tasks:
 ## Dashboard One
 Dashboard one may be accessed in the file "Task1.twbx"
 
+![image](https://user-images.githubusercontent.com/37620953/145492635-bbed6775-d8ab-4544-a9f7-d6f795ce8c21.png)
 
 Link to Tableau Public:\
 https://public.tableau.com/app/profile/jodi.baron/viz/final_16390681664000/Dashboard1?publish=yes
